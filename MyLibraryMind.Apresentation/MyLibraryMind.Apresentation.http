@@ -1,0 +1,6 @@
+@MyLibraryMind.Apresentation_HostAddress = http://localhost:5247
+
+GET {{MyLibraryMind.Apresentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
