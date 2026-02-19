@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLibraryMind.Apresentation", "MyLibraryMind.Apresentation\MyLibraryMind.Apresentation.csproj", "{4AEBE179-1178-4EA0-B00E-8A0DA50BD735}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLibraryMind.Presentation", "MyLibraryMind.Presentation\MyLibraryMind.Presentation.csproj", "{4AEBE179-1178-4EA0-B00E-8A0DA50BD735}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLibraryMind.Domain", "MyLibraryMind.Domain\MyLibraryMind.Domain.csproj", "{AA00069D-5718-445C-B071-B83CBDC7DD20}"
 EndProject

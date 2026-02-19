@@ -1,5 +1,55 @@
+# Build results
 bin/
 obj/
-/packages/
-riderModule.iml
-/_ReSharper.Caches/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+
+# Test results
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# Publish outputs
+publish/
+
+# Git
+.gitignore
+
+# EF Core Migrations
+# Normalmente você versiona migrations, mas se quiser ignorar:
+# MyLibraryMind.InfraStructure/Migrations/*
+
+# Supabase secrets/configs locais
+# Nunca versionar chaves privadas ou arquivos de ambiente
+.env
+supabase/.temp/
+supabase/.branches/
+supabase/.local/
+
+# Connection strings e configs sensíveis
+appsettings.Development.json
+appsettings.Local.json
+appsettings.json
