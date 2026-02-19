@@ -1,14 +1,23 @@
 using Microsoft.EntityFrameworkCore;
 using MyLibraryMind.InfraStructure.Data;
+using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Carrega o .env apenas em desenvolvimento
+if (builder.Environment.IsDevelopment())
+{
+    Env.Load();
+}
+
 // Add services to the container.
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+{
+    var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION");
+    options.UseNpgsql(connectionString);
+});
 
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
@@ -20,9 +29,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
